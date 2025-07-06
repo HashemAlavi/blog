@@ -20,7 +20,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.Flex({
       components: [
         { Component: Component.PageTitle() },
-        { Component: Component.DesktopOnly(Component.Spacer)}
+        { Component: Component.DesktopOnly(Component.Spacer)},
         {
           Component: Component.Search(),
           grow: true,
@@ -35,9 +35,6 @@ export const defaultContentPageLayout: PageLayout = {
     Component.ArticleTitle(),
     Component.ContentMeta(),
     Component.TagList(),
-  ],
-  afterBody: [
-    Component.Backlinks(),
   ],
   left: [
     Component.MobileOnly(Component.Spacer()),
