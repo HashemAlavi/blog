@@ -19,12 +19,12 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Flex({
       components: [
+        { Component: Component.PageTitle() },
         {
           Component: Component.Search(),
           grow: true,
         },
         { Component: Component.Darkmode() },
-        { Component: Component.ReaderMode() },
       ],
     }),
     Component.ConditionalRender({
