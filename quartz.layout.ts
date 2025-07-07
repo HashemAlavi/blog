@@ -23,7 +23,6 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.DesktopOnly(Component.Spacer)},
         {
           Component: Component.Search(),
-          grow: true,
         },
         { Component: Component.Darkmode() },
       ],
