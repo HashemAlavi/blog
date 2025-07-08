@@ -68,6 +68,8 @@ code {
 
 h2#footnote-label{
   visibility: hidden;
+  text-align: right;
+  direction: rtl;
 }
  
 h2#footnote-label::after{
