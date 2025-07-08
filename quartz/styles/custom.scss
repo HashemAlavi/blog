@@ -89,6 +89,6 @@ blockquote {
 	transition: border-color .2s;
 }
 
-.reading-time {
+.content-meta span:last-child {
   display: none !important;
-}
+  }
