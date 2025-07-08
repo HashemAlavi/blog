@@ -19,7 +19,7 @@ button#explorer .fold {
   transition: transform .3s;
 }
 
-.content-meta[show-comma="true"] > span::after {
+.content-meta[show-comma="true"] > span:not(:last-child)::after {
   content: "" !important;
 }
 
