@@ -92,3 +92,7 @@ blockquote {
 .content-meta span:last-child {
   display: none !important;
   }
+
+.content-meta[show-comma="true"] > span::after {
+  content: "" !important;
+}
