@@ -6,7 +6,20 @@ export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
   header: [],
   afterBody: [
-    Component.Backlinks()
+    Component.Backlinks(),
+    Component.Comments({
+    provider: 'giscus',
+    options: {
+      // from data-repo
+      repo: 'eledah/quartz_blog',
+      // from data-repo-id
+      repoId: 'R_kgDOLxbW_g',
+      // from data-category
+      category: 'Announcements',
+      // from data-category-id
+      categoryId: 'DIC_kwDOLxbW_s4ChRbJ',
+    }
+  }),
   ],
   footer: Component.Footer({
     links: {
