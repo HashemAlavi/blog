@@ -19,10 +19,7 @@ button#explorer .fold {
   transition: transform .3s;
 }
 
-.content-meta[show-comma="true"] > span:not(:last-child) {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-}
+.content-meta[show-comma="true"] > span:not(:last-child)
 
 .tags {
   padding-left: 0px !important;
