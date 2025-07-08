@@ -19,7 +19,7 @@ button#explorer .fold {
   transition: transform .3s;
 }
 
-.content-meta {
+.content-meta[show-comma="true"] > span:not(:last-child) {
   margin-left: 8px !important;
   margin-right: 0px !important;
 }
@@ -92,3 +92,7 @@ blockquote {
 .content-meta span:last-child {
   display: none !important;
   }
+
+.content-meta > *:not(:last-child)::after {
+  content: "" !important;
+}
