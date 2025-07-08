@@ -27,6 +27,9 @@ function boolToStringBool(b: boolean): string {
 
 export default ((opts: Options) => {
   const Comments: QuartzComponent = ({ displayClass, fileData, cfg }: QuartzComponentProps) => {
+    if (fileData.slug === "index") {
+      return <></>
+    }
     // check if comments should be displayed according to frontmatter
     const disableComment: boolean =
       typeof fileData.frontmatter?.comments !== "undefined" &&
