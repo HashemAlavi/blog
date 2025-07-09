@@ -100,3 +100,10 @@ footer {
   opacity: 0.9;
   text-align: center;
 }
+
+.logo-svg {
+    width: 20px;
+    height: 20px;
+    fill: var(--dark);
+    transition: all 0.3s ease;
+}
