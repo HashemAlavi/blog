@@ -6,7 +6,7 @@ const colorPalettes = {
   chrome: {
     lightMode: {
       light: "#eae9ff",
-      lightgray: "#414450",
+      lightgray: "#d6d3ff",
       gray: "#1d193d",
       darkgray: "#1d193d",
       dark: "#312d65",
@@ -17,7 +17,7 @@ const colorPalettes = {
     },
     darkMode: {
       light: "#0a0919",
-      lightgray: "#1d193d",
+      lightgray: "#414450",
       gray: "#6b62cb",
       darkgray: "#eae9ff",
       dark: "#d6d3ff",
