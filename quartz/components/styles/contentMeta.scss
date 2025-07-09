@@ -1,14 +1,4 @@
 .content-meta {
   margin-top: 0;
   color: var(--darkgray);
-
-  &[show-comma="true"] {
-    > *:not(:last-child) {
-      margin-right: 0px;
-
-      &::after {
-        content: ",";
-      }
-    }
-  }
 }
