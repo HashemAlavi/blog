@@ -23,8 +23,8 @@ export const sharedPageComponents: SharedLayout = {
   ],
   footer: Component.Footer({
     links: {
-      '<img src="icons\telegram.svg" alt="Telegram" style="width:20px;height:20px;vertical-align:middle;" />': "https://t.me/Hashem_Alavi",
-    },
+      "telegram": "https://t.me/Hashem_Alavi"
+      "mail": "mailto:max2002.sha81@gmail.com"
   }),
 }
 
