@@ -94,3 +94,9 @@ blockquote {
 .content-meta > *:not(:last-child)::after {
   content: "" !important;
 }
+
+footer {
+  border-top: 1px solid var(--lightgray);
+  opacity: 0.9;
+  text-align: center;
+}
