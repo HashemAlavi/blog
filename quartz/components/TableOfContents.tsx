@@ -37,6 +37,7 @@ export default ((opts?: Partial<Options>) => {
           aria-controls="toc-content"
           aria-expanded={!fileData.collapseToc}
         >
+          <h3>{i18n(cfg.locale).components.tableOfContents.title}</h3>
           <svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -51,7 +52,6 @@ export default ((opts?: Partial<Options>) => {
           >
             <polyline points="6 9 12 15 18 9"></polyline>
           </svg>
-          <h3>{i18n(cfg.locale).components.tableOfContents.title}</h3>
         </button>
         <OverflowList class={fileData.collapseToc ? "collapsed toc-content" : "toc-content"}>
           {fileData.toc.map((tocEntry) => (
