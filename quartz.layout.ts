@@ -24,8 +24,7 @@ export const sharedPageComponents: SharedLayout = {
   footer: Component.Footer({
     links: {
       "telegram": "https://t.me/Hashem_Alavi"
-      "mail": "mailto:max2002.sha81@gmail.com"
-  }),
+  }}),
 }
 
 // components for pages that display a single page (e.g. a single note)
