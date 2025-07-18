@@ -53,8 +53,7 @@ export const defaultContentPageLayout: PageLayout = {
     Component.TagList(),
   ],
   left: [
-    Component.MobileOnly(Component.Spacer()),
-    Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer),
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
