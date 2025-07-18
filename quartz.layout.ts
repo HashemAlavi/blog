@@ -33,7 +33,6 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Flex({
       components: [
-        { Component: Component.MobileOnly(Component.Explorer) },
         { Component: Component.PageTitle() },
         { Component: Component.DesktopOnly(Component.Spacer),
           grow: true,
