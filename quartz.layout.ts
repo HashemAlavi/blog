@@ -33,6 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
       Component.Flex({
       components: [
+        { Component: Component.Explorer}
         { Component: Component.PageTitle() },
         { Component: Component.DesktopOnly(Component.Spacer),
           grow: true,
@@ -54,7 +55,6 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.MobileOnly(Component.Spacer()),
     Component.Explorer(),
-    Component.MobileOnly(Component.PageTitle)
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
