@@ -54,6 +54,7 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.MobileOnly(Component.Spacer()),
     Component.Explorer(),
+    Component.MobileOnly(Component.PageTitle)
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
