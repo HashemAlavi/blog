@@ -1,6 +1,7 @@
 import { PageLayout, SharedLayout } from "./quartz/cfg"
 import * as Component from "./quartz/components"
 
+
 // components shared across all pages
 export const sharedPageComponents: SharedLayout = {
   head: Component.Head(),
@@ -32,6 +33,7 @@ export const defaultContentPageLayout: PageLayout = {
   beforeBody: [
     Component.Flex({
       components: [
+        { Component: Component.MobileOnly(Component.Explorer) },
         { Component: Component.PageTitle() },
         { Component: Component.DesktopOnly(Component.Spacer),
           grow: true,
@@ -53,6 +55,7 @@ export const defaultContentPageLayout: PageLayout = {
   left: [
     Component.MobileOnly(Component.Spacer()),
     Component.Explorer(),
+    Component.DesktopOnly(Component.Explorer)
   ],
   right: [
     Component.DesktopOnly(Component.TableOfContents()),
